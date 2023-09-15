@@ -22,7 +22,7 @@ public class ListaTarefa {
         List<Tarefa> itensParaRemover = new ArrayList<>();
         for(Tarefa t : tarefaList){
             //como getDescricao e descricao são uma String, deve usar o equals para comparar.
-            if (descricao.equalsIgnoreCase(t.getDescricao())){
+            if (t.getDescricao().equals(descricao)){
                 itensParaRemover.add(t);
             }
         }
@@ -39,6 +39,5 @@ public class ListaTarefa {
         // Nao aconselha-se usar sout em objetos/classes que nao sejam o programa principal.
         // Nesse caso fariamos um return e o toString para nomear a impressao do sout no programa.
     }
-
 
 }
