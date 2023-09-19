@@ -1,4 +1,4 @@
-package list.pesquisa.modelos;
+package list.PesquisaEmListas.modelos;
 
 import java.util.ArrayList;
 import java.util.List;

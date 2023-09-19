@@ -1,4 +1,4 @@
-package list.pesquisa.modelos;
+package list.PesquisaEmListas.modelos;
 
 public class Livro {
 

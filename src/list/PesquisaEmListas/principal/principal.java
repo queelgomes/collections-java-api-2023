@@ -1,7 +1,6 @@
-package list.pesquisa.principal;
+package list.PesquisaEmListas.principal;
 
-import list.pesquisa.modelos.CatalogoLivros;
-import list.pesquisa.modelos.Livro;
+import list.PesquisaEmListas.modelos.CatalogoLivros;
 
 public class principal {
     public static void main(String[] args) {
