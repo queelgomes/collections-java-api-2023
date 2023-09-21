@@ -50,4 +50,5 @@ public class ConjuntoPalavrasUnicas {
         return Objects.equals(palavraSet, that.palavraSet);
     }
 
+
 }

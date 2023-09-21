@@ -14,6 +14,5 @@ public class principal {
         agendaContatos.adicionarContato("Joyce", 965656565);
 
         agendaContatos.exibirContatos();
-        agendaContatos.pesquisarPorNome("Joyce");
     }
 }
