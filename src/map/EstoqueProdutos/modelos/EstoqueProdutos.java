@@ -1,9 +1,11 @@
 package map.EstoqueProdutos.modelos;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
 public class EstoqueProdutos {
+    DecimalFormat df = new DecimalFormat("0.00");
     private Map<Long, Produto> estoqueProdutosMap;
 
     public EstoqueProdutos() {
@@ -21,9 +23,9 @@ public class EstoqueProdutos {
     public void calcularValorTotalEstoque(){
         double calcularValorTotal = 0;
         for (Produto p : estoqueProdutosMap.values()){
-            calcularValorTotal += p.getPreco() + p.getQuantidade();
+            calcularValorTotal += p.getPreco() * p.getQuantidade();
         }
-        System.out.println("Valor total do estoque é " + calcularValorTotal);
+        System.out.println("Valor total do estoque é R$" + df.format(calcularValorTotal));
     }
     public void obterProdutoMaisCaro(){
         Produto produtoMaisCaro = null;

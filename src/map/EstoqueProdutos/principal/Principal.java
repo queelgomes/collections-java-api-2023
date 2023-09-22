@@ -18,5 +18,6 @@ public class Principal {
 
         estoqueProdutos.obterProdutoMaisBarato();
         estoqueProdutos.obterProdutoMaisCaro();
+        estoqueProdutos.calcularValorTotalEstoque();
     }
 }
